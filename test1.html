@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Holidays and Accommodations</title>
+    <script src="test1.js" defer></script>
+</head>
+<body>
+    <h1>Public Holidays and Accommodations</h1>
+    <label for="country">Country:</label>
+    <select id="country" onchange="onchange_country()">
+        <option value="">Select a country</option>
+        <!-- Countries will be populated here -->
+    </select>
+    <label for="city">City:</label>
+    <select id="city" onchange="onchange_city()">
+        <option value="" data-lat="" data-lon="">Select a city</option>
+        <!-- cities will be populated here -->
+    </select>
+    <br>
+    <label for="holiday">Holidays in This Country:</label>
+    <select id="holiday" onchange="onchange_holiday()">
+        <option value="">Select a holiday</option>
+        <!-- holiday will be populated here -->
+    </select>
+
+    <button onclick="click_button()">Get Weather and Accommodations</button>
+
+    <div id="weather"></div>
+    <div id="accommodations"></div>
+</body>
+</html>
